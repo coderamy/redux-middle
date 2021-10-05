@@ -1,1 +1,1 @@
-"# redux-middle" 
+"# redux-middleware" 
