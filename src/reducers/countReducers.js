@@ -1,9 +1,15 @@
-const countReducers = (state = 0, action) => { 
+const initionalCount = Number(localStorage.getItem('count') || 0);
+
+const countReducers = (state = initionalCount, action) => { 
   switch (action.type) {
     case "INCREMENt":
-      return state + 1;
+      let count = state + 1;  
+      localStorage.setItem('count', count)
+      return count;
     case "DECREMENT":
-      return state - 1;
+      let countDe = state - 1;  
+      localStorage.setItem('count', countDe)
+      return countDe;
     default:
       return state;
   }

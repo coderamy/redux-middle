@@ -19,16 +19,16 @@ const Counter = () => {
             </Button>
           </Card.Text>
         </Card.Body>
-      </Card>
+      </Card><br/>
       <Button
         variant="outline-success"
         size="lg"
         onClick={() => dispatch(increment())}
       >
-        Increment +
-      </Button>
+        Increment (+)
+      </Button>  {' '}
       <Button variant="outline-warning" size="lg" onClick={() => dispatch(decrement())}>
-        Decrement -
+        Decrement (-)
       </Button>
     </>
   );
